@@ -8,7 +8,8 @@ SHAREDBUILDDIR := ../shared/build
 TARGETDIR := bin
 TESTDIR := tests
 UNITTESTDIR := unit_tests
-CONFIG:= dpi_config-demo.json
+CONFIG:=dpi_config.json
+DEMO_CONFIG:= dpi_config-demo.json
 
 SRCEXT := cpp
 # List of source files for your thread library
@@ -81,7 +82,7 @@ run:
 	./bin/dpi configs/$(CONFIG)
 
 demo:
-	./bin/dpi configs/$(CONFIG)
+	./bin/dpi configs/$(DEMO-CONFIG)
 
 clean:
 	@echo "Cleaning..."
